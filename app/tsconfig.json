@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"outDir": "../dist/app",
+		"module": "system",
+		"moduleResolution": "node",
+		"jsx": "react",
+		"newLine": "LF",
+		"noImplicitAny": true,
+		"noEmitOnError": true,
+		"noImplicitReturns": true,
+		"noLib": false,
+		"removeComments": false,
+		"rootDir": ".",
+		"sourceMap": true
+	}
+}
