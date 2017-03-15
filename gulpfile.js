@@ -14,7 +14,7 @@ gulp.task("connect", function() {
 
 gulp.task("clean", function() {
 	return del(["dist"]);
-})
+});
 
 gulp.task("tsc", ["clean"], shell.task([
 	"tsc"
@@ -35,6 +35,6 @@ gulp.task("css", function() {
 	return gulp.src("app/style/**/*.*(css|less)")
 		.pipe(rename("output.css"))
 		.pipe(gulp.dest("dist/css"))
-})
+});
 
 gulp.task("default", ["tsc_watch", "html", "css", "connect"]);
