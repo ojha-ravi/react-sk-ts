@@ -4,16 +4,15 @@
 		<meta charset="utf-8">
 		<title>React Starter Kit</title>
 		<link rel="stylesheet" href="./css/output.css">
+		<script src="jspm_packages/system.js"></script>
+		<script src="config.js"></script>
 	</head>
 	<body>
 		<div class="container"></div>
 	</body>
-	
-	<script type="javascript" src="jspm_packages/system.js"></script>
-	<script type="javascript" src="config.js"></script>
 	<script>
 		System.import("app/js/app").then(function (m) {
-			console.log("app loades")
+			console.log("app loaded")
 		}, function(e) {
 			console.log("Some error occured: ", e)
 		});

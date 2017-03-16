@@ -71,8 +71,13 @@ gulp.task("copy:jspm_packages", function() {
 		.pipe(sym("dist/jspm_packages", {force: true}));
 });
 
+gulp.task("app:install", shell.task([
+	"jspm install"
+]));
+
 gulp.task("default", function(cb) {
 	runSequence("clean",
+		"app:install",
 		[
 			"tsc",
 			"html",
