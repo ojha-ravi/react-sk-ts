@@ -14,11 +14,21 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-shell": "^0.6.3"
+    "gulp-shell": "^0.6.3",
+    "gulp-sym": "^1.0.2",
+    "gulp-watch": "^4.3.11",
+    "jspm": "^0.16.53",
+    "run-sequence": "^1.2.2"
   },
   "dependencies": {
     "@types/react": "^15.0.16",
     "@types/react-dom": "^0.14.23",
     "typescript": "^2.2.1"
+  },
+  "jspm": {
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "npm:typescript@^2.0.7"
+    }
   }
 }
