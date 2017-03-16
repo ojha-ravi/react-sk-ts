@@ -46,6 +46,7 @@ gulp.task("css", function() {
 	return gulp.src("app/style/**/*.*(css|less)")
 		.pipe(rename("output.css"))
 		.pipe(gulp.dest("dist/css"))
+		.pipe(connect.reload());
 });
 
 gulp.task("css_watch", function() {
@@ -53,12 +54,7 @@ gulp.task("css_watch", function() {
 		.pipe(watch("app/style/**/*.*(css|less)"))
 		.pipe(rename("output.css"))
 		.pipe(gulp.dest("dist/css"))
-});
-
-gulp.task("html", function() {
-	return gulp.src("app/)")
-		.pipe(rename("output.css"))
-		.pipe(gulp.dest("dist/css"))
+		.pipe(connect.reload());
 });
 
 gulp.task("copy:config", function() {
