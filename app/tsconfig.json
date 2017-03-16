@@ -12,6 +12,9 @@
 		"noLib": false,
 		"removeComments": false,
 		"rootDir": ".",
-		"sourceMap": true
+		"sourceMap": true,
+		"typeRoots": [
+			"../node_modules/@types"
+		]
 	}
 }

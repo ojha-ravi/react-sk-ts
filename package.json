@@ -17,6 +17,8 @@
     "gulp-shell": "^0.6.3"
   },
   "dependencies": {
+    "@types/react": "^15.0.16",
+    "@types/react-dom": "^0.14.23",
     "typescript": "^2.2.1"
   }
 }
